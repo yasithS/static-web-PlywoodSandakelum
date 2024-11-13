@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="templateHeaderAndFooter.css">
+    <link rel="stylesheet" href="products.css">
+    <title>products</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div id="headerContent" class="wrapper">
+            <a href="/index.html"><img id="logo" src="img/logo.svg" alt="logo" /></a>
+            <nav>
+                <a class="link active" href="index.html">Home</a>
+                <a class="link" href="aboutUs.html">about us</a>
+                <a class="link" href="products.html">all products</a>
+                <img id="offcanvas" src="img/icons/menu.svg" alt="Menu" />
+            </nav>
+        </div>
+    </header>
+    <!-- section 1 -->
+    <section id="section1">
+        <div id="sec1bgcolor">
+            <div class="wrapper" id="sec1Padiing">
+                <div id="sec1Content">
+                    <h1>
+                        <span class="h1span">all</span>
+                        products
+                    </h1>
+                    <p>We sell a range of plywood boards and sheets for your needs. Currently We have plywood sheets
+                        ranging in size from 1mm to 25mm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 -->
+    <section id="section2">
+        <div class="wrapper" id="sec2Content">
+            <h1>Plywood Boards and Sheets</h1>
+            <p>Here you will see our plywood boards and sheets and you can get them in sizes of 1mm, 2.5mm, 4.5mm,
+                6.9mm, 12mm, 15mm, 18mm and 25mm.</p>
+            <div id="plywoodsBoards">
+                <div class="boards">
+                    <!-- <span class="hover"></span> -->
+                    <span class="boardTitle">Shutter Board</span>
+                    <img src="img/products/shutter-board.jpg" alt="Shutter Board">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">Hard Board</span>
+                    <img src="img/products/hard-board.jpg" alt="Hard Board">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">Pvc Board</span>
+                    <img src="img/products/pvc-board.jpg" alt="PVC">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">M.D.F Melamine</span>
+                    <img src="img/products/mdf-melamine.jpg" alt="M.D.F Melamine">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">Chipboard Melamine</span>
+                    <img src="img/products/chipboard-melamine.jpg" alt="Eco Sheets">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">Plywood Sheet</span>
+                    <img src="img/products/plywood-sheet.jpg" alt="Eco Sheets">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">Eco Sheets</span>
+                    <img src="img/products/eco-sheet.jpg" alt="Eco Sheets">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">HDX Sheet</span>
+                    <img src="img/products/hdx-sheet.jpg" alt="Eco Sheets">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">MRX Sheet</span>
+                    <img src="img/products/mrx-sheet.jpg" alt="Eco Sheets">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">HMR Sheet</span>
+                    <img src="img/products/hmr-sheet.jpg" alt="Eco Sheets">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">Filmface</span>
+                    <img src="img/products/filmface.jpg" alt="Eco Sheets">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">MDF Sheet</span>
+                    <img src="img/products/mdf-sheet.jpg" alt="Eco Sheets">
+                </div>
+                <div class="boards">
+                    <span class="hover"></span>
+                    <span class="boardTitle">Cladding Sheet</span>
+                    <img src="img/products/cladding-sheet.jpg" alt="Cladding Sheet">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper" id="footerContent">
+            <div id="footerContent1">
+                <img src="img/logo2.svg" alt="logo">
+                <span>All Rights reserved (c) 2022<span>
+                        <img class="icons" src="img/icons/facebook.svg" alt="facebook">
+            </div>
+            <div id="footerContent2">
+                <a href="#">home</a>
+                <a href="#">about us</a>
+                <a href="#">all products</a>
+                <a href="#">contact us</a>
+            </div>
+            <div id="footerContent3">
+                <div class="footerContent3sub">
+                    <img class="icons" src="img/icons/call.svg" alt="call">
+                    <span>070 366 2466</span>
+                </div>
+                <div class="footerContent3sub">
+                    <img class="icons" src="img/icons/whatsapp.svg" alt="whatsapp">
+                    <span>074 150 2503</span>
+                </div>
+                <div class="footerContent3sub">
+                    <img class="icons" src="img/icons/location.svg" alt="location">
+                    <span>No 300/3,<br>
+                        Kadawatha - Ganemulla rd,<br>
+                        Ganemulla, Sri Lanka</span>
+                </div>
+                <div id="clickTop" onclick="clickTop()">
+                    <span id="topArrow"></span>
+                    <span id="topArrowText">PAGE TOP</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+  const navLinks = document.querySelectorAll('nav .link');
+  const currentPath = window.location.pathname;
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath.split('/').pop()) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+  </script>
+
+</html>

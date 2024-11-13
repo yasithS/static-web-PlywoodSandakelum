@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="templateHeaderAndFooter.css">
+    <link rel="stylesheet" href="aboutUs.css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div id="headerContent" class="wrapper">
+            <a href="/index.html"><img id="logo" src="img/logo.svg" alt="logo" /></a>
+            <nav>
+                <a class="link active" href="index.html">Home</a>
+                <a class="link" href="aboutUs.html">about us</a>
+                <a class="link" href="products.html">all products</a>
+                <img id="offcanvas" src="img/icons/menu.svg" alt="Menu" />
+            </nav>
+        </div>
+    </header>
+    <!-- section 1 -->
+    <section id="section1">
+        <div id="sec1bgcolor">
+            <div class="wrapper" id="sec1Padiing">
+                <div id="sec1Content">
+                    <h1>
+                        <span class="h1span">about</span>
+                        plywood sandakelum
+                    </h1>
+                    <p>The business Sandakelum started with the sale of planks wood and has grown into the sale of
+                        plywood boards and sheets today. Having won the trust of our customers for over twenty years, we
+                        are always committed to providing a better service to our customers.</p>
+
+                    <p>We sell a number of imported plywood types in Sri Lanka. Contact us for more information about
+                        our sheets and borads</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- call Us -->
+    <div id="callUs">
+        <div class="wrapper" id="callContent">
+            <span>Call Us : </span>
+            <div id="tpNumbers">
+                <img src="img/icons/call-icon.svg" alt="call">
+                <span>074 150 2503 | 070 366 2466</span>
+            </div>
+        </div>
+    </div>
+    <!-- section 2 -->
+    <section id="section2">
+        <div class="wrapper" id="sec2Content">
+            <h1>Our Warehouse</h1>
+            <p>Come to our warehouse and choose the plywood sheets and boards that suit your needs. Our address is : No
+                241/A, Kadawatha rd, Ganemulla, Sri Lanka
+            </p>
+            <div id="plywoodsBoards">
+                <img src="img/warehouse-1.jpg" alt="warehouse 01" class="warehouseImg" id="warehouseImg1">
+                <img src="img/warehouse-2.jpg" alt="warehouse 02" class="warehouseImg" id="warehouseImg2">
+                <img src="img/warehouse-3.jpg" alt="warehouse 03" class="warehouseImg" id="warehouseImg3">
+                <img src="img/warehouse-4.jpg" alt="warehouse 04" class="warehouseImg" id="warehouseImg4">
+                <img src="img/warehouse-5.jpg" alt="warehouse 05" class="warehouseImg" id="warehouseImg5">
+                <img src="img/warehouse-6.jpg" alt="warehouse 06" class="warehouseImg" id="warehouseImg6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper" id="footerContent">
+            <div id="footerContent1">
+                <img src="img/logo2.svg" alt="logo">
+                <span>All Rights reserved (c) 2022<span>
+                        <img class="icons" src="img/icons/facebook.svg" alt="facebook">
+            </div>
+            <div id="footerContent2">
+                <a href="#">home</a>
+                <a href="#">about us</a>
+                <a href="#">all products</a>
+                <a href="#">contact us</a>
+            </div>
+            <div id="footerContent3">
+                <div class="footerContent3sub">
+                    <img class="icons" src="img/icons/call.svg" alt="call">
+                    <span>070 366 2466</span>
+                </div>
+                <div class="footerContent3sub">
+                    <img class="icons" src="img/icons/whatsapp.svg" alt="whatsapp">
+                    <span>074 150 2503</span>
+                </div>
+                <div class="footerContent3sub">
+                    <img class="icons" src="img/icons/location.svg" alt="location">
+                    <span>No 300/3,<br>
+                        Kadawatha - Ganemulla rd,<br>
+                        Ganemulla, Sri Lanka</span>
+                </div>
+                <div id="clickTop" onclick="clickTop()">
+                    <span id="topArrow"></span>
+                    <span id="topArrowText">PAGE TOP</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+  const navLinks = document.querySelectorAll('nav .link');
+  const currentPath = window.location.pathname;
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPath.split('/').pop()) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+  </script>
+
+</html>

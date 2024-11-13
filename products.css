@@ -1,0 +1,112 @@
+/* section 1 */
+
+#section1 {
+    background: url(img/plywood-decoration.jpg) no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+#sec1bgcolor {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 35px 0;
+}
+
+#sec1Content {
+    width: 490px;
+    margin: 120px 0;
+}
+
+#sec1Content>h1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#sec1Content>h1>span {
+    font-size: 25px;
+    color: #fc0;
+}
+
+#sec1Content>p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-2);
+    margin: 25px 0;
+}
+
+/* section 2 */
+
+#section2 {
+    padding: 55px 0;
+}
+
+#sec2Content>h1 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+#sec2Content>p {
+    padding: 10px;
+    font-size: 16px;
+    font-family: var(--font-2);
+
+}
+
+#plywoodsBoards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.boards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.boards::before {
+    content: "";
+    width: 20px;
+    height: 60px;
+    background-color: var(--color-2);
+    position: absolute;
+    left: 20px;
+}
+
+.boards:hover::before {
+    width: 100%;
+    z-index: -1;
+    transition: 1s;
+}
+
+.hover {
+    margin-left: 50px;
+}
+
+.boardTitle {
+    font-size: 22px;
+    border-bottom: 7px solid var(--color-1);
+    margin-left: 40px;
+
+}
+
+.boardTitle::before {
+    content: "";
+    padding-right: 8px;
+}
+
+.hover {
+    width: 20px;
+    height: 60px;
+    background-color: var(--color-2);
+    position: absolute;
+    left: -30px;
+}
